@@ -22,9 +22,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script>
-            analytics.track('Clicked CTA', {
-            location: 'header',
-            type: 'button'
+            $('#myCTA').click(function(){
+                analytics.track('Clicked CTA', {
+                  location: 'hero',
+                  type: 'button'
+                });
             });
         </script>
     </body>
